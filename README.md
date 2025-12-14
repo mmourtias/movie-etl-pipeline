@@ -77,8 +77,6 @@ movie_etl_api/
 └── README.md
 
 
----
-
 ## ⚙️ Setup Instructions
 
 1. Clone the repository
