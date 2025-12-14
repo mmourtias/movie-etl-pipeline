@@ -50,8 +50,8 @@ visualize.py → charts & reports (PNG)
 
 ## 📂 Project Structure
 
+```text
 movie_etl_api/
-│
 ├── etl/
 │   ├── collect.py        # Extract data from TMDB API
 │   ├── transform.py      # Clean & normalize raw data
@@ -75,6 +75,7 @@ movie_etl_api/
 ├── requirements.txt
 ├── .env                  # API credentials (not committed)
 └── README.md
+
 
 ---
 
