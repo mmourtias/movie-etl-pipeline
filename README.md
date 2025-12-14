@@ -51,6 +51,7 @@ visualize.py → charts & reports (PNG)
 ## 📂 Project Structure
 
 ```text
+
 movie_etl_api/
 ├── etl/
 │   ├── collect.py        # Extract data from TMDB API
@@ -76,21 +77,21 @@ movie_etl_api/
 ├── .env                  # API credentials (not committed)
 └── README.md
 
+```
+---
 
 ## ⚙️ Setup Instructions
 
-1. Clone the repository
-2. Create and activate a virtual environment
-3. Install dependencies:
-   pip install -r requirements.txt
-4. Create a `.env` file in the project root:
-   TMDB_API_KEY=your_api_key_here
+1. Clone the repository  
+2. Create and activate a virtual environment  
+3. Install dependencies using: pip install -r requirements.txt  
+4. Create a .env file in the project root containing: TMDB_API_KEY=your_api_key_here  
 
 ---
 
 ## ▶️ Running the Pipeline
 
-Run each step in order from the project root:
+Run each step in order from the project root using the following commands:
 
 python etl/collect.py  
 python etl/transform.py  
@@ -104,12 +105,12 @@ If all steps complete successfully, the ETL pipeline has executed end-to-end and
 
 ## 🔍 Data Validation
 
-- Raw data is stored in `data/raw/`
-- Processed data is stored in `data/processed/`
-- Loaded data is stored in `database/movies.db`
+- Raw data is stored in data/raw/
+- Processed data is stored in data/processed/
+- Loaded data is stored in database/movies.db
 - Tables and records can be inspected via SQLite Explorer
-- SQL analysis queries are defined in `queries.sql`
-- Visualization outputs are saved in the `reports/` directory
+- SQL analysis queries are defined in database/queries.sql
+- Visualization outputs are saved in the reports/ directory
 
 ---
 
@@ -127,8 +128,8 @@ Each visualization is generated directly from the corresponding SQL query result
 
 The ETL pipeline is complete and fully functional.
 
-Potential future improvements:
-- API pagination & incremental loads
+Potential future improvements include:
+- API pagination and incremental loads
 - Workflow orchestration (Airflow / Prefect)
 - Data quality checks
 - Interactive dashboards
@@ -138,7 +139,7 @@ Potential future improvements:
 
 ## 🧠 Key Takeaway
 
-This project focuses on **understanding data flow and structure**, not memorization.  
+This project focuses on understanding **data flow and structure**, not memorization.  
 Each ETL and analysis step is isolated, testable, and verifiable, closely reflecting real-world data engineering and analytics workflows.
 
 ---
