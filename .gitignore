@@ -1,0 +1,20 @@
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# SQLite database (optional – recommended)
+database/*.db
+
+# Generated data (optional)
+data/raw/
+data/processed/
+
+# OS files
+.DS_Store
+Thumbs.db
